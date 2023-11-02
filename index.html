@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./filtro.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Filtro</title>
+  </head>
+  <body>
+    <nav class="flex flex-row" style="background-color: #e3f2fd;">
+      <div class="rounded-full p-10">
+        <img
+          src="./assets/headerImagen.JPG"
+          alt=""
+          class="h-20 w-20 rounded-full" />
+      </div>
+      <h1 class="text-3xl font-bold flex-row">Fashion Room - Geraldyn</h1>
+    </nav>
+
+    <div class="container">
+      <div class="menuDerecho">
+        <input type="text" placeholder="Buscar.." class="search" />
+        <h1>Categorias</h1>
+        <div class="cats"></div>
+        <h1>Max Price</h1>
+        <div class="price">
+          <input type="range" class="priceRange" />
+          <span class="priceValue">$40</span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="products"></div>
+      </div>
+    </div>
+
+    <script src="./filtro.js"></script>
+  </body>
+</html>
